@@ -1,6 +1,6 @@
 # slash [![Build Status](https://secure.travis-ci.org/sindresorhus/slash.png?branch=master)](http://travis-ci.org/sindresorhus/slash)
 
-Convert Windows backslash paths to slash paths.
+Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
 
 [Forward-slash paths can be used in Windows](http://superuser.com/a/176395/6877) as long as it's not an extended-length path and it doesn't contain Unicode.
 
@@ -18,13 +18,16 @@ var slash = require('slash');
 
 var str = path.join('foo', 'bar');
 console.log(str);
-//=> foo\\bar
+// Unix    => foo\bar
+// Windows => foo\\bar
 
 if (process.platform === 'win32') {
 	str = slash(str);
-	console.log(str);
-	//=> foo/bar
 }
+
+console.log(str);
+// Unix    => foo\bar
+// Windows => foo\bar
 ```
 
 
