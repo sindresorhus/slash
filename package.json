@@ -1,0 +1,43 @@
+{
+  "name": "slash",
+  "version": "0.0.0",
+  "description": "Convert Windows backslash paths to slash paths",
+  "keywords": [
+    "path",
+    "seperator",
+    "sep",
+    "slash",
+    "backslash",
+    "windows",
+    "win"
+  ],
+  "homepage": "https://github.com/sindresorhus/slash",
+  "bugs": "https://github.com/sindresorhus/slash/issues",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "main": "slash.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sindresorhus/slash.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "~1.11.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "files": [
+    "slash.js"
+  ]
+}
