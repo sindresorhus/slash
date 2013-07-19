@@ -18,16 +18,16 @@ var slash = require('slash');
 
 var str = path.join('foo', 'bar');
 console.log(str);
-// Unix    => foo\bar
+// Unix    => foo/bar
 // Windows => foo\\bar
 
 if (process.platform === 'win32') {
-	str = slash(str);
+  str = slash(str);
 }
 
 console.log(str);
-// Unix    => foo\bar
-// Windows => foo\bar
+// Unix    => foo/bar
+// Windows => foo/bar
 ```
 
 
