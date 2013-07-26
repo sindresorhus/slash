@@ -2,7 +2,7 @@
 
 Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
 
-[Forward-slash paths can be used in Windows](http://superuser.com/a/176395/6877) as long as it's not an extended-length path and it doesn't contain Unicode.
+[Forward-slash paths can be used in Windows](http://superuser.com/a/176395/6877) as long as they're not extended-length paths and don't contain any non-ascii characters.
 
 
 ## Install
