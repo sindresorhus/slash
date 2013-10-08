@@ -18,7 +18,7 @@ npm install --save slash
 #### [Bower](http://bower.io)
 
 ```
-bower install --save slash
+bower install --save win-slash
 ```
 
 #### [Component](https://github.com/component/component)
