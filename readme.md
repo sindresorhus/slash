@@ -7,10 +7,30 @@ Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
 
 ## Install
 
-Install with [npm](https://npmjs.org): `npm install --save slash`
+Download the library [manually](https://github.com/sindresorhus/slash/releases) or with a package-manager.
+
+#### [npm](https://npmjs.org/package/slash)
+
+```
+npm install --save slash
+```
+
+#### [Bower](http://bower.io)
+
+```
+bower install --save slash
+```
+
+#### [Component](https://github.com/component/component)
+
+```
+component install sindresorhus/slash
+```
 
 
 ## Example
+
+Using Node.js:
 
 ```js
 var path = require('path');
@@ -42,4 +62,4 @@ Accepts a Windows backslash path and returns a slash path.
 
 ## License
 
-MIT License • © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

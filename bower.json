@@ -1,0 +1,11 @@
+{
+	"name": "slash",
+	"version": "0.1.1",
+	"main": "slash.js",
+	"ignore": [
+		"test.js",
+		".*",
+		"component.json",
+		"package.json"
+	]
+}

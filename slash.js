@@ -1,11 +1,20 @@
-'use strict';
-module.exports = function (str) {
-	var isExtendedLengthPath = /^\\\\\?\\/.test(str);
-	var hasNonAscii = /[^\x00-\x80]+/.test(str);
+(function () {
+	'use strict';
 
-	if (isExtendedLengthPath || hasNonAscii) {
-		return str;
+	function slash(str) {
+		var isExtendedLengthPath = /^\\\\\?\\/.test(str);
+		var hasNonAscii = /[^\x00-\x80]+/.test(str);
+
+		if (isExtendedLengthPath || hasNonAscii) {
+			return str;
+		}
+
+		return str.replace(/\\/g, '/');
 	}
 
-	return str.replace(/\\/g, '/');
-};
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = slash;
+	} else {
+		window.slash = slash;
+	}
+})();

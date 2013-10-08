@@ -1,0 +1,18 @@
+{
+  "name": "slash",
+  "version": "0.1.1",
+  "description": "Convert Windows backslash paths to slash paths",
+  "repo": "sindresorhus/slash",
+  "keywords": [
+    "path",
+    "seperator",
+    "sep",
+    "slash",
+    "backslash",
+    "windows",
+    "win"
+  ],
+  "main": "slash.js",
+  "scripts": ["slash.js"],
+  "license": "MIT"
+}
