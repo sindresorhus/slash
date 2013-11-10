@@ -1,3 +1,10 @@
+/*!
+	slash
+	Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
+	https://github.com/sindresorhus/slash
+	by Sindre Sorhus
+	MIT License
+*/
 (function () {
 	'use strict';
 
