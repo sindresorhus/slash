@@ -4,6 +4,8 @@
 
 [Forward-slash paths can be used in Windows](http://superuser.com/a/176395/6877) as long as they're not extended-length paths and don't contain any non-ascii characters.
 
+This was created since the `path` methods in Node outputs `\\` paths on Windows.
+
 
 ## Install
 
