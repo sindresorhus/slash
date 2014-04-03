@@ -1,4 +1,4 @@
-# slash [![Build Status](https://secure.travis-ci.org/sindresorhus/slash.png?branch=master)](http://travis-ci.org/sindresorhus/slash)
+# slash [![Build Status](https://travis-ci.org/sindresorhus/slash.svg?branch=master)](https://travis-ci.org/sindresorhus/slash)
 
 > Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
 
@@ -11,26 +11,20 @@ This was created since the `path` methods in Node outputs `\\` paths on Windows.
 
 Download the library [manually](https://github.com/sindresorhus/slash/releases) or with a package-manager.
 
-#### [npm](https://npmjs.org/package/slash)
-
-```
-npm install --save slash
+```bash
+$ npm install --save slash
 ```
 
-#### [Bower](http://bower.io)
-
-```
-bower install --save win-slash
+```bash
+$ bower install --save win-slash
 ```
 
-#### [Component](https://github.com/component/component)
-
-```
-component install sindresorhus/slash
+```bash
+$ component install sindresorhus/slash
 ```
 
 
-## Example
+## Usage
 
 Using Node.js:
 
@@ -64,4 +58,4 @@ Accepts a Windows backslash path and returns a slash path.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
