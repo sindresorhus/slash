@@ -1,6 +1,5 @@
 {
 	"name": "win-slash",
-	"version": "0.1.2",
 	"main": "slash.js",
 	"ignore": [
 		"test.js",

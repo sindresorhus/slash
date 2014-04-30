@@ -9,24 +9,20 @@ This was created since the `path` methods in Node outputs `\\` paths on Windows.
 
 ## Install
 
-Download the library [manually](https://github.com/sindresorhus/slash/releases) or with a package-manager.
-
-```bash
+```sh
 $ npm install --save slash
 ```
 
-```bash
+```sh
 $ bower install --save win-slash
 ```
 
-```bash
+```sh
 $ component install sindresorhus/slash
 ```
 
 
 ## Usage
-
-Using Node.js:
 
 ```js
 var path = require('path');
@@ -51,7 +47,7 @@ console.log(str);
 
 ### slash(path)
 
-Type: `String`
+Type: `string`
 
 Accepts a Windows backslash path and returns a slash path.
 
