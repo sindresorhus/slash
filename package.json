@@ -16,7 +16,6 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
-  "main": "slash.js",
   "repository": "sindresorhus/slash",
   "scripts": {
     "test": "mocha"
@@ -25,10 +24,10 @@
     "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "license": "MIT",
   "files": [
-    "slash.js"
+    "index.js"
   ]
 }

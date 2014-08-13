@@ -1,7 +1,6 @@
-/*global describe */
 'use strict';
 var assert = require('assert');
-var slash = require('./slash');
+var slash = require('./');
 
 describe('slash()', function () {
 	it('should convert backwards-slash paths to forward slash paths', function () {

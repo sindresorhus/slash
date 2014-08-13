@@ -13,14 +13,6 @@ This was created since the `path` methods in Node outputs `\\` paths on Windows.
 $ npm install --save slash
 ```
 
-```sh
-$ bower install --save win-slash
-```
-
-```sh
-$ component install sindresorhus/slash
-```
-
 
 ## Usage
 
@@ -29,15 +21,10 @@ var path = require('path');
 var slash = require('slash');
 
 var str = path.join('foo', 'bar');
-console.log(str);
 // Unix    => foo/bar
 // Windows => foo\\bar
 
-if (process.platform === 'win32') {
-  str = slash(str);
-}
-
-console.log(str);
+slash(str);
 // Unix    => foo/bar
 // Windows => foo/bar
 ```
@@ -54,4 +41,4 @@ Accepts a Windows backslash path and returns a slash path.
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
