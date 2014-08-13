@@ -1,6 +1,6 @@
 {
   "name": "slash",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Convert Windows backslash paths to slash paths",
   "keywords": [
     "path",
