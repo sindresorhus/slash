@@ -26,7 +26,7 @@ var str = path.join('foo', 'bar');
 
 slash(str);
 // Unix    => foo/bar
-// Windows => foo/bar
+// Windows => foo\\bar
 ```
 
 
