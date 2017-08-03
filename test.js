@@ -1,20 +1,17 @@
-'use strict';
-var assert = require('assert');
-var slash = require('./');
+import test from 'ava';
+import m from '.';
 
-describe('slash()', function () {
-	it('should convert backwards-slash paths to forward slash paths', function () {
-		assert.equal(slash('c:/aaaa\\bbbb'), 'c:/aaaa/bbbb');
-		assert.equal(slash('c:\\aaaa\\bbbb'), 'c:/aaaa/bbbb');
-	});
+test('convert backwards-slash paths to forward slash paths', t => {
+	t.is(m('c:/aaaa\\bbbb'), 'c:/aaaa/bbbb');
+	t.is(m('c:\\aaaa\\bbbb'), 'c:/aaaa/bbbb');
+});
 
-	it('should not convert extended-length paths', function () {
-		var path = '\\\\?\\c:\\aaaa\\bbbb';
-		assert.equal(slash(path), path);
-	});
+test('not convert extended-length paths', t => {
+	const path = '\\\\?\\c:\\aaaa\\bbbb';
+	t.is(m(path), path);
+});
 
-	it('should not convert paths with Unicode', function () {
-		var path = 'c:\\aaaa\\bbbb\\★';
-		assert.equal(slash(path), path);
-	});
+test('not convert paths with Unicode', t => {
+	const path = 'c:\\aaaa\\bbbb\\★';
+	t.is(m(path), path);
 });
