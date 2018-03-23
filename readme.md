@@ -9,7 +9,7 @@ This was created since the `path` methods in Node outputs `\\` paths on Windows.
 
 ## Install
 
-```sh
+```
 $ npm install slash
 ```
 
