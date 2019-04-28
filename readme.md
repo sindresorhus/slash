@@ -20,11 +20,11 @@ $ npm install slash
 const path = require('path');
 const slash = require('slash');
 
-const str = path.join('foo', 'bar');
+const string = path.join('foo', 'bar');
 // Unix    => foo/bar
 // Windows => foo\\bar
 
-slash(str);
+slash(string);
 // Unix    => foo/bar
 // Windows => foo/bar
 ```
