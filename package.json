@@ -22,11 +22,10 @@
 	"keywords": [
 		"path",
 		"seperator",
-		"sep",
 		"slash",
 		"backslash",
 		"windows",
-		"win"
+		"convert"
 	],
 	"devDependencies": {
 		"ava": "^1.4.1",
