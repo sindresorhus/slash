@@ -1,4 +1,4 @@
-# slash [![Build Status](https://travis-ci.org/sindresorhus/slash.svg?branch=master)](https://travis-ci.org/sindresorhus/slash)
+# slash
 
 > Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`
 
