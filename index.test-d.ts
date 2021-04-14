@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import slash = require('.');
+import slash from './index.js';
 
 expectType<string>(slash('foo\\bar'));

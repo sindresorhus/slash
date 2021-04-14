@@ -8,8 +8,8 @@ Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`.
 
 @example
 ```
-import * as path from 'path';
-import slash = require('slash');
+import path from 'path';
+import slash from 'slash';
 
 const string = path.join('foo', 'bar');
 // Unix    => foo/bar
@@ -20,6 +20,4 @@ slash(string);
 // Windows => foo/bar
 ```
 */
-declare function slash(path: string): string;
-
-export = slash;
+export default function slash(path: string): string;

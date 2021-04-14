@@ -6,19 +6,17 @@
 
 This was created since the `path` methods in Node.js outputs `\\` paths on Windows.
 
-
 ## Install
 
 ```
 $ npm install slash
 ```
 
-
 ## Usage
 
 ```js
-const path = require('path');
-const slash = require('slash');
+import path from 'path';
+import slash from 'slash';
 
 const string = path.join('foo', 'bar');
 // Unix    => foo/bar
@@ -29,7 +27,6 @@ slash(string);
 // Windows => foo/bar
 ```
 
-
 ## API
 
 ### slash(path)
@@ -37,7 +34,6 @@ slash(string);
 Type: `string`
 
 Accepts a Windows backslash path and returns a path with forward slashes.
-
 
 ---
 
