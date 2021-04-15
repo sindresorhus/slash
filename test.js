@@ -15,3 +15,8 @@ test('not convert paths with Unicode', t => {
 	const path = 'c:\\aaaa\\bbbb\\★';
 	t.is(slash(path), path);
 });
+
+test('not convert paths with Unicode and needCheckAscii = false', t => {
+	const path = 'c:\\aaaa\\bbbb\\★';
+	t.is(slash(path, false), 'c:/aaaa/bbbb/★');
+});

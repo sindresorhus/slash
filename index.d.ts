@@ -20,4 +20,4 @@ slash(string);
 // Windows => foo/bar
 ```
 */
-export default function slash(path: string): string;
+export default function slash(path: string, needCheckAscii: boolean): string;
