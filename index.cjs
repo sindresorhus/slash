@@ -6,7 +6,7 @@ function slash(path) {
 		return path;
 	}
 
-	return path.replace(/\\/g, "/");
+	return path.replace(/\\/g, '/');
 }
 
-module.exports = slash
+module.exports = slash;
