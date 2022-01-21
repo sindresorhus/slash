@@ -13,10 +13,25 @@ $ npm install slash
 ```
 
 ## Usage
+### ES Modules
 
 ```js
 import path from 'path';
 import slash from 'slash';
+
+const string = path.join('foo', 'bar');
+// Unix    => foo/bar
+// Windows => foo\\bar
+
+slash(string);
+// Unix    => foo/bar
+// Windows => foo/bar
+```
+
+### Commonjs
+```js
+const path = require('path');
+const slash = require('slash');
 
 const string = path.join('foo', 'bar');
 // Unix    => foo/bar
