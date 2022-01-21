@@ -11,7 +11,16 @@
 		"url": "https://sindresorhus.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
+	"main": "./index.cjs",
+	"module": "./index.js",
+	"types": "./index.d.ts",
+	"exports": {
+		".": {
+			"require": "./index.cjs",
+			"import": "./index.js",
+			"types": "./index.d.ts"
+		}
+	},
 	"engines": {
 		"node": ">=12"
 	},
