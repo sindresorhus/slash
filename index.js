@@ -1,7 +1,7 @@
 export default function slash(path) {
 	const isExtendedLengthPath = /^\\\\\?\\/.test(path);
 
-	if (isExtendedLengthPath || hasNonAscii) {
+	if (isExtendedLengthPath) {
 		return path;
 	}
 
