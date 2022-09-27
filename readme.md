@@ -8,14 +8,14 @@ This was created since the `path` methods in Node.js outputs `\\` paths on Windo
 
 ## Install
 
-```
-$ npm install slash
+```sh
+npm install slash
 ```
 
 ## Usage
 
 ```js
-import path from 'path';
+import path from 'node:path';
 import slash from 'slash';
 
 const string = path.join('foo', 'bar');
@@ -34,15 +34,3 @@ slash(string);
 Type: `string`
 
 Accepts a Windows backslash path and returns a path with forward slashes.
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-slash?utm_source=npm-slash&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>

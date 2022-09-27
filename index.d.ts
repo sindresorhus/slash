@@ -8,7 +8,7 @@ Convert Windows backslash paths to slash paths: `foo\\bar` ➔ `foo/bar`.
 
 @example
 ```
-import path from 'path';
+import path from 'node:path';
 import slash from 'slash';
 
 const string = path.join('foo', 'bar');
