@@ -1,6 +1,6 @@
 {
 	"name": "slash",
-	"version": "5.0.1",
+	"version": "5.1.0",
 	"description": "Convert Windows backslash paths to slash paths",
 	"license": "MIT",
 	"repository": "sindresorhus/slash",
