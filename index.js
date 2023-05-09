@@ -1,5 +1,5 @@
 export default function slash(path) {
-	const isExtendedLengthPath = /^\\\\\?\\/.test(path);
+	const isExtendedLengthPath = path.startsWith('\\\\?\\');
 
 	if (isExtendedLengthPath) {
 		return path;
